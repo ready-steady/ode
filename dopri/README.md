@@ -7,4 +7,4 @@ based on the [Dormand–Prince method][1].
 
 [1]: https://en.wikipedia.org/wiki/Dormand–Prince_method
 
-[doc]: http://godoc.org/github.com/ready-steady/numeric/integration/ode/dopri
+[doc]: http://godoc.org/github.com/ready-steady/ode/dopri

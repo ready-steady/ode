@@ -7,4 +7,4 @@ based on the fourth-order [Runge–Kutta method][1].
 
 [1]: https://en.wikipedia.org/wiki/Runge–Kutta_methods
 
-[doc]: http://godoc.org/github.com/ready-steady/numeric/integration/ode/rk4
+[doc]: http://godoc.org/github.com/ready-steady/ode/rk4
