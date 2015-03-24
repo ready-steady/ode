@@ -3,8 +3,8 @@ package ode
 import (
 	"testing"
 
-	"github.com/ready-steady/numeric/integration/ode/dopri"
-	"github.com/ready-steady/numeric/integration/ode/rk4"
+	"github.com/ready-steady/ode/dopri"
+	"github.com/ready-steady/ode/rk4"
 )
 
 func TestIntegrator(t *testing.T) {

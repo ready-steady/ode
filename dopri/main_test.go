@@ -3,7 +3,7 @@ package dopri
 import (
 	"testing"
 
-	"github.com/ready-steady/support/assert"
+	"github.com/ready-steady/assert"
 )
 
 func TestComputeToy(t *testing.T) {
