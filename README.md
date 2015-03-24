@@ -1,4 +1,4 @@
-# Ordinary Differential Equations
+# Ordinary Differential Equations [![Build Status][travis-img]][travis-url]
 
 The package provides algorithms for integrating systems of [ordinary
 differential equations][1].
@@ -21,3 +21,5 @@ The package contains two subpackages:
 [1]: https://en.wikipedia.org/wiki/Ordinary_differential_equation
 
 [doc]: http://godoc.org/github.com/ready-steady/ode
+[travis-img]: https://travis-ci.org/ready-steady/ode.svg?branch=master
+[travis-url]: https://travis-ci.org/ready-steady/ode
