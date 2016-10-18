@@ -1,7 +1,7 @@
 // Package dopri provides an integrator of systems of ordinary differential
 // equations based on the Dormand–Prince method.
 //
-// https://en.wikipedia.org/wiki/Dormand–Prince_method
+// https://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method
 package dopri
 
 import (
