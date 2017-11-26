@@ -21,5 +21,5 @@ func TestComputeKraichnanOrszag(t *testing.T) {
 	integrator, _ := New(fixture.configure())
 	ys, _, _ := integrator.Compute(fixture.dydx, fixture.y0, fixture.xs)
 
-	assert.EqualWithin(ys, fixture.ys, 5e-14, t)
+	assert.Close(ys, fixture.ys, 5e-14, t)
 }

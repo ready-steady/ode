@@ -43,7 +43,7 @@ func TestComputeToy(t *testing.T) {
 	integrator, _ := New(fixture.configure())
 
 	ys, _, stats, _ := integrator.ComputeWithStats(dydx, input.y0, input.xs)
-	assert.EqualWithin(ys, output.ys, 1e-15, t)
+	assert.Close(ys, output.ys, 1e-15, t)
 	assert.Equal(*stats, Stats{Evaluations: 61, Rejections: 0, Steps: 10}, t)
 }
 
@@ -54,7 +54,7 @@ func TestComputeNonstiff(t *testing.T) {
 	integrator, _ := New(fixture.configure())
 
 	ys, _, stats, _ := integrator.ComputeWithStats(input.dydx, input.y0, input.xs)
-	assert.EqualWithin(ys, output.ys, 1e-14, t)
+	assert.Close(ys, output.ys, 1e-14, t)
 	assert.Equal(*stats, Stats{Evaluations: 151, Rejections: 3, Steps: 22}, t)
 }
 
@@ -65,8 +65,8 @@ func TestComputeStiff(t *testing.T) {
 	integrator, _ := New(fixture.configure())
 
 	ys, xs, stats, _ := integrator.ComputeWithStats(input.dydx, input.y0, input.xs)
-	assert.EqualWithin(ys, output.ys, 3e-13, t)
-	assert.EqualWithin(xs, output.xs, 4e-9, t)
+	assert.Close(ys, output.ys, 3e-13, t)
+	assert.Close(xs, output.xs, 4e-9, t)
 	assert.Equal(*stats, Stats{Evaluations: 20179, Rejections: 323, Steps: 3040}, t)
 }
 
